@@ -124,8 +124,8 @@ const ExampleContent = () => (
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl xl:text-3xl">
         Inspired by that experience, we decided to dedicate our lives to
         learning more about animals and their natural habitats. Since then, our
-        passion has only grown, and we've turned it into a mission to educate
-        others about the beauty of the animal kingdom.
+        passion has only grown, and we&apos;ve turned it into a mission to
+        educate others about the beauty of the animal kingdom.
       </p>
       <Link
         href="/#gallery"
@@ -144,16 +144,16 @@ const ExampleContentTwo = () => (
     </h2>
     <div className="col-span-1 md:col-span-8">
       <p className="mb-4 text-xl text-neutral-600 md:text-2xl xl:text-3xl">
-        Over the past five years, we've learned a great deal about the intricate
-        behaviors and survival instincts of animals. We discovered how they
-        adapt to different environments, form social bonds, and communicate in
-        ways that are both complex and fascinating.
+        Over the past five years, we&apos;ve learned a great deal about the
+        intricate behaviors and survival instincts of animals. We discovered how
+        they adapt to different environments, form social bonds, and communicate
+        in ways that are both complex and fascinating.
       </p>
       <p className="mb-8 text-xl text-neutral-600 md:text-2xl xl:text-3xl">
-        Through our experiences, we've gained a deeper appreciation for the role
-        animals play in maintaining the balance of nature. We've come to
-        understand their unique diets, migratory patterns, and how they respond
-        to the ever-changing world around them.
+        Through our experiences, we&apos;ve gained a deeper appreciation for the
+        role animals play in maintaining the balance of nature. We&apos;ve come
+        to understand their unique diets, migratory patterns, and how they
+        respond to the ever-changing world around them.
       </p>
       <Link
         href={"/blog"}
