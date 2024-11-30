@@ -14,14 +14,63 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+@property --a {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.5em;
+  place-self: center;
+  place-content: center;
+  padding: 0.5em;
+  color: #ededed;
+  font: clamp(1em, 2vw + 2vh, 2em) sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+
+.card::before {
+  position: absolute;
+  z-index: 1;
+  inset: -1em;
+  border: solid 1.125em;
+  border-image: conic-gradient(
+      from var(--a),
+      transparent,
+      #4f46e5,
+      #60a5fa,
+      transparent,
+      #4f46e5,
+      #60a5fa
+    )
+    1;
+  filter: blur(0.15em);
+  animation: a 8s linear infinite;
+  content: "";
+}
+
+@keyframes a {
+  to {
+    --a: 1turn;
+  }
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Internet Explorer, Edge */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
