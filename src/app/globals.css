@@ -50,7 +50,7 @@
       rgb(221, 76, 221)
     )
     1;
-  filter: blur(0.35em);
+  filter: blur(0.5em);
   animation: a 15s linear infinite;
   content: "";
 }
