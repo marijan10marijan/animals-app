@@ -50,13 +50,15 @@
       transparent,
       #4f46e5,
       #60a5fa,
+      rgb(221, 76, 221),
       transparent,
       #4f46e5,
-      #60a5fa
+      #60a5fa,
+      rgb(221, 76, 221)
     )
     1;
-  filter: blur(0.15em);
-  animation: a 8s linear infinite;
+  filter: blur(0.25em);
+  animation: a 15s linear infinite;
   content: "";
 }
 

@@ -31,6 +31,21 @@ const getBlog = async (slug) => {
   }
 };
 
+export async function generateMetadata({ params }) {
+  const blog = await getBlog(params.slug);
+
+  if (!blog) {
+    return {
+      title: "Blog Not Found",
+    };
+  }
+
+  return {
+    title: `${blog.title} | Animals`,
+    description: `Read more about ${blog.title} on our blog`,
+  };
+}
+
 // Define custom components for PortableText
 const components = {
   types: {
