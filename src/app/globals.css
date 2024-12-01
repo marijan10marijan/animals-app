@@ -30,13 +30,8 @@
   overflow: hidden;
   position: relative;
   border-radius: 0.5em;
-  place-self: center;
-  place-content: center;
+
   padding: 0.5em;
-  color: #ededed;
-  font: clamp(1em, 2vw + 2vh, 2em) sans-serif;
-  text-align: center;
-  text-transform: uppercase;
   text-wrap: balance;
 }
 
@@ -44,7 +39,7 @@
   position: absolute;
   z-index: 1;
   inset: -1em;
-  border: solid 1.125em;
+  border: solid 1em;
   border-image: conic-gradient(
       from var(--a),
       #4f46e5,
@@ -55,7 +50,7 @@
       rgb(221, 76, 221)
     )
     1;
-  filter: blur(0.25em);
+  filter: blur(0.35em);
   animation: a 15s linear infinite;
   content: "";
 }
