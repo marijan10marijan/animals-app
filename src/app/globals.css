@@ -47,11 +47,9 @@
   border: solid 1.125em;
   border-image: conic-gradient(
       from var(--a),
-      transparent,
       #4f46e5,
       #60a5fa,
       rgb(221, 76, 221),
-      transparent,
       #4f46e5,
       #60a5fa,
       rgb(221, 76, 221)
